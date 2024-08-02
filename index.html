@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Application</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    
     <section>
       <header>
         <form class="form-place">
-          <input type="text" placeholder="Enter a city..." required class="search-box"/>
-          <input type="submit" value="Search" class="search-button"/>
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            required
+            class="search-box"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <div class="details">
-      <div class="city-temperature">
-        <h1 class="city-place">Addis Ababa</h1>
-        <h2>5ºC </h2>
-        <p>Wind: <strong>2m/s</strong>    Humidity: <strong>80%</strong></p>
-      </div>
-      <div class="condition">
-        <div class="icon">⛅</div>
-        <p class="weather-condition">Cloudy</p>
-      </div>
-      <div class="date-time">
-        <h1>Fri Oct 18</h1>
-        <h2>13:24</h2>
-      </div>
+        <div class="city-temperature">
+          <h1 class="city-place">Addis Ababa</h1>
+          <h2 class="temperature-value">...</h2>
+          <p>Wind: <strong>2m/s</strong> Humidity: <strong>80%</strong></p>
+        </div>
+        <div class="condition">
+          <div class="icon">⛅</div>
+          <p class="weather-condition">Cloudy</p>
+        </div>
+        <div class="date-time">
+          <h1>Fri Oct 18</h1>
+          <h2>13:24</h2>
+        </div>
       </div>
       <footer>
-        This project was coded by <a href="">Bethelhem Daniel Fenta</a>, is open sourced <a href="">on GitHub</a>
-        , and <a href="">hosted on Netlify</a>.
+        This project was coded by <a href="">Bethelhem Daniel Fenta</a>, is open
+        sourced <a href="">on GitHub</a> , and <a href="">hosted on Netlify</a>.
       </footer>
     </section>
     <script src="src/script.js"></script>

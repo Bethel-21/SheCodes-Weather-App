@@ -27,6 +27,11 @@ section{
     padding: 13px;
     border: none;
     background-color: white;
+    border-radius: 15px;
+}
+.search-button:hover{
+    background-color: #00254b;
+    color: white;
 }
 .details{
     display: flex;
@@ -45,6 +50,7 @@ h2{
 }
 h1{
     margin-bottom: 30px;
+    font-size: 35px;
 }
 p{
     margin-bottom: 30px;

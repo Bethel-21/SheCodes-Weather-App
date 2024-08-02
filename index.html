@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Application</title>
-</head>
-<body>
-    <section>
-        <header>
-            <form>
-                <input type="text">
-                <input type="submit">
-            </form>
-        </header>  
-        <div>
-             <h1>
-                Addis Ababa
-            </h1>
-            <h2>
-                5c
-            </h2>
-            <p>
-            </p>
-        </div>
-        <div>
-            <p>
-                feels like 5c
-                cloudy
-            </p>
-        </div>
-        <div>
-           <p> oct 18 Fri </p>
-           <h2>13:24</h2>
-        </div>
-        <footer>
-            This project was coded by Bethelhem Daniel Fenta, is open sourced on GitHub, and hosted on Netlify.
-        </footer>
-    </section>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
     
-</body>
+    <section>
+      <header>
+        <form class="form-place">
+          <input type="text" placeholder="Enter a city..." required class="search-box"/>
+          <input type="submit" value="Search" class="search-button"/>
+        </form>
+      </header>
+      <div class="details">
+      <div class="city-temperature">
+        <h1>Addis Ababa</h1>
+        <h2>5ºC </h2>
+        <p>Wind: <strong>2m/s</strong>    Humidity: <strong>80%</strong></p>
+      </div>
+      <div class="condition">
+        <div class="icon">⛅</div>
+        <p class="weather-condition">Cloudy</p>
+      </div>
+      <div class="date-time">
+        <h1>Fri Oct 18</h1>
+        <h2>13:24</h2>
+      </div>
+      </div>
+      <footer>
+        This project was coded by <a href="">Bethelhem Daniel Fenta</a>, is open sourced <a href="">on GitHub</a>
+        , and <a href="">hosted on Netlify</a>.
+      </footer>
+    </section>
+    <script src="src/script.js"></script>
+  </body>
 </html>

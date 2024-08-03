@@ -17,7 +17,6 @@ function displayTemperature(response) {
 
   let changeCondition = document.querySelector(".weather-condition");
   changeCondition.innerHTML = `${condition}`;
-
 }
 
 function listenRequest(city) {
@@ -37,3 +36,46 @@ let change = document.querySelector(".form-place");
 change.addEventListener("submit", changeCity);
 
 listenRequest("Addis Ababa");
+
+let dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let monthNames = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
+function updateDateTime() {
+  let showDate = new Date();
+  let day = dayNames[showDate.getDay()];
+  let datenumber = showDate.getDate();
+  let month = monthNames[showDate.getMonth()];
+  let hour = showDate.getHours();
+  let minute = showDate.getMinutes();
+  let second = showDate.getSeconds(); 
+
+
+  minute = minute < 10 ? `0${minute}` : minute;
+  second = second < 10 ? `0${second}` : second;
+
+  let onlyDate = `${day} ${month} ${datenumber}`;
+  let onlyTime = `${hour}:${minute}`;
+
+  let changeDate = document.querySelector(".date-value");
+  changeDate.innerHTML = onlyDate;
+
+  let changeTime = document.querySelector(".time-value");
+  changeTime.innerHTML = onlyTime;
+}
+
+updateDateTime();
+
+setInterval(updateDateTime, 1000);

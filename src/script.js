@@ -3,8 +3,21 @@ function displayTemperature(response) {
   let cityElement = response.data.city;
   changeCityContent.innerHTML = cityElement;
   let temperature = Math.round(response.data.temperature.current);
+  let wind = Math.round(response.data.wind.speed);
+  let humidity = Math.round(response.data.temperature.humidity);
+  let condition = response.data.condition.description;
   let changeTemperature = document.querySelector(".temperature-value");
   changeTemperature.innerHTML = `${temperature}ºC`;
+
+  let changeWind = document.querySelector(".wind-value");
+  changeWind.innerHTML = `${wind}km/hr`;
+
+  let changeHumidity = document.querySelector(".humidity-value");
+  changeHumidity.innerHTML = `${humidity}%`;
+
+  let changeCondition = document.querySelector(".weather-condition");
+  changeCondition.innerHTML = `${condition}`;
+
 }
 
 function listenRequest(city) {

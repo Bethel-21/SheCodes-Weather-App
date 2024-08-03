@@ -1,5 +1,8 @@
 body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/137/048/original/mountain.jpg?1722702562");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
   color: #00254b;
 }
 section {
@@ -8,6 +11,7 @@ section {
   width: 700px;
   padding: 20px;
   margin: 50px auto;
+  
 }
 .form-place {
   margin-left: 50px;

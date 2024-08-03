@@ -2,77 +2,74 @@ body {
   background-image: url("C:/Users/Admin/Desktop/SheCodes/homework/New folder/SheCodes-Weather-App/src/images/mountain.jpg");
   color: #00254b;
 }
-section{
-    background-color: #0581b1;
-    
-    width: 700px;
-    padding: 20px;
-    margin: 50px  auto;
-    
+section {
+  background-color: #0581b1;
+  border-radius: 10px;
+  width: 700px;
+  padding: 20px;
+  margin: 50px auto;
 }
-.form-place{
-    margin-left: 50px;
-    margin-bottom: 15px;
-
+.form-place {
+  margin-left: 50px;
+  margin-bottom: 15px;
 }
-.search-box{
-    width: 450px;
-    padding: 13px;
-    border: none;
-    background-color: white;
-    margin-right: 5px;
+.search-box {
+  width: 450px;
+  padding: 13px;
+  border: none;
+  background-color: white;
+  margin-right: 5px;
 }
-.search-button{
-    width: 80px;
-    padding: 13px;
-    border: none;
-    background-color: white;
-    border-radius: 15px;
+.search-button {
+  width: 80px;
+  padding: 13px;
+  border: none;
+  background-color: white;
+  border-radius: 15px;
 }
-.search-button:hover{
-    background-color: #00254b;
-    color: white;
+.search-button:hover {
+  background-color: #00254b;
+  color: white;
 }
-.details{
-    display: flex;
-    justify-content: space-between;
+.details {
+  display: flex;
+  justify-content: space-between;
 }
-h2{
-    font-size: 60px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-::placeholder{
-    font-size: 15px;
+::placeholder {
+  font-size: 15px;
 }
-.search-button{
-    font-size: 15px;
+.search-button {
+  font-size: 15px;
 }
-h1{
-    margin-bottom: 30px;
-    font-size: 35px;
+h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
 }
-p{
-    margin-bottom: 30px;
-    font-size: 20px;
+p {
+  margin-bottom: 30px;
+  font-size: 20px;
 }
-a{
-    color: white;
+a {
+  color: white;
 }
-footer{
-    font-size: 15px;
-    text-align: center;
-    margin-top: 30px;
+footer {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 30px;
 }
-strong{
-    color: white;
-    
+strong {
+  color: white;
 }
-.weather-condition{
-    font-size: 40px;
-    margin-right: 15px; 
-    margin-top: 5px;
+.weather-condition {
+  font-size: 40px;
+  margin-right: 15px;
+  margin-top: 5px;
 }
-.icon{
-    width: 200px;
+.icon {
+  width: 200px;
 }

@@ -6,6 +6,8 @@ function displayTemperature(response) {
   let wind = Math.round(response.data.wind.speed);
   let humidity = Math.round(response.data.temperature.humidity);
   let condition = response.data.condition.description;
+  let iconValue = response.data.condition.icon_url;
+
   let changeTemperature = document.querySelector(".temperature-value");
   changeTemperature.innerHTML = `${temperature}ºC`;
 
@@ -17,6 +19,9 @@ function displayTemperature(response) {
 
   let changeCondition = document.querySelector(".weather-condition");
   changeCondition.innerHTML = `${condition}`;
+
+  let changeIcon = document.querySelector(".icon");
+  changeIcon.src = `${iconValue}`;
 }
 
 function listenRequest(city) {
@@ -60,8 +65,7 @@ function updateDateTime() {
   let month = monthNames[showDate.getMonth()];
   let hour = showDate.getHours();
   let minute = showDate.getMinutes();
-  let second = showDate.getSeconds(); 
-
+  let second = showDate.getSeconds();
 
   minute = minute < 10 ? `0${minute}` : minute;
   second = second < 10 ? `0${second}` : second;

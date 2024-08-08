@@ -64,7 +64,7 @@ a {
 footer {
   font-size: 15px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 strong {
   color: white;
@@ -76,4 +76,37 @@ strong {
 }
 .icon {
   width: 200px;
+}
+
+.forecast-day{
+  font-size: 30px;
+  margin-top: 15px;
+  
+  color: rgb(241, 177, 92);
+  text-align: center;
+}
+.forecast-icon{
+  font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
+  
+  
+}
+.forecast-value{
+  font-size: 20px;
+  margin-top: 10px;
+  
+}
+.weather-forecast{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 15px;
+  
+}
+.weather-lower-range{
+  margin-left: 10px;
+}
+.weather-upper-range{
+  margin-right: -5px;
 }

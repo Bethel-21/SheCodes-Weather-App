@@ -83,3 +83,24 @@ function updateDateTime() {
 updateDateTime();
 
 setInterval(updateDateTime, 1000);
+
+function showForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="days-container">
+          <div class="forecast-day">${day}</div>
+          <div class="forecast-icon">⛅</div>
+          <div class="forecast-value">
+            <strong class="weather-upper-range">19ºC</strong>
+            <span class="weather-lower-range">16ºC</span>
+          </div>
+        </div>`;
+  });
+
+  let forecastElement = document.querySelector("#weather-forecast-id");
+  forecastElement.innerHTML = forecastHtml;
+}
+showForecast();
